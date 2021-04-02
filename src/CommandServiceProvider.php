@@ -32,7 +32,7 @@ class CommandServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands = [
-            'command.andphp.model'  => \AndPHP\Console\Commands\ModelCommand::class
+            'command.andphp_model'  => \AndPHP\Console\Commands\ModelCommand::class
         ];
 
         foreach ($this->commands as $key => $command) {
