@@ -1,0 +1,50 @@
+<?php
+
+namespace DummyNamespace;
+
+DummyUseNamespace
+
+class DummyClass extends DummyExtendClassController
+{
+
+    /**
+     * 列表查询
+     */
+    public function list()
+    {
+        //
+    }
+
+    /**
+     * 创建新增
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * 指定ID查询
+     */
+    public function show()
+    {
+        //
+    }
+
+
+    /**
+     * 更新
+     */
+    public function update()
+    {
+        //
+    }
+
+    /**
+     * 删除
+     */
+    public function destroy()
+    {
+        //
+    }
+}
