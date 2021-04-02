@@ -37,8 +37,7 @@ class CommandServiceProvider extends ServiceProvider
 
         foreach ($this->commands as $key => $command) {
             $this->app->singleton($key, function ($command) {
-                $newObj = '\\'.$command;
-                return new $newObj();
+                return new $command;
             });
         }
 
