@@ -36,8 +36,8 @@ class CommandServiceProvider extends ServiceProvider
         ];
 
         foreach ($this->commands as $key => $command) {
-            $this->app->singleton($key, function ($command) {
-                return new $command;
+            $this->app->singleton($key, function () use($command) {
+                return new $command();
             });
         }
 
