@@ -19,7 +19,7 @@ class MysqlToMarkdown extends MarkdownConfig
     {
         $path = 'dictionary/database';
         $output_path = app_path() . '/ApiDocs/Markdown';
-        $this->configSetting('数据字典', $path, [
+        $this->configSetting('数据字典-数据库', $path, [
             '数据字典',
             '数据库'
         ]);
