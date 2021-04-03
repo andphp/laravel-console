@@ -35,6 +35,7 @@ class CommandServiceProvider extends ServiceProvider
             \AndPHP\Console\Commands\ModelCommand::class,
             \AndPHP\Console\Commands\ControllerCommand::class,
             \AndPHP\Console\Commands\ServiceCommand::class,
+            \AndPHP\Console\Commands\DocsCommand::class,
         ];
 
         foreach ($this->commands as $command) {

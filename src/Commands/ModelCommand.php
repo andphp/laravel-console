@@ -327,9 +327,12 @@ FROM
      */
     protected function replaceExtendClass($stub, $Extend)
     {
+        if(!$Extend){
+            $Extend = 'Model';
+        }
         $class = str_replace($this->getNamespace($Extend) . '\\', '', $Extend);
 
-        $use = count(explode('\\', $Extend)) >= 2 ? "" : 'use ' . $this->qualifyClass($Extend) . "Model;";
+        $use = count(explode('\\', $Extend)) >= 2 ? "" : 'use ' . $this->qualifyClass($Extend) . ";";
 
         $stub = str_replace([
             'DummyUseNamespace',

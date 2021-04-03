@@ -1,4 +1,4 @@
 /vendor/
-
+/Commands/Docs/hexo_d/db.json
 .idea/
 .DS_Store
