@@ -41,7 +41,7 @@ class DocsCommand extends Command
         switch ($this->getNameInput()) {
             case 'postman':
                 $files = $this->getDir(app_path() . '/ApiDocs/PostmanJson');
-                $post = new AndPHP\Console\Commands\Docs\PostmanToMarkdown();
+                $post = new \AndPHP\Console\Commands\Docs\PostmanToMarkdown();
                 foreach ($files as $fileName) {
                     $post->getMarkdownDocument($fileName, app_path() . '/ApiDocs/Markdown');
                     $this->info($fileName . ' created successfully.');
