@@ -22,6 +22,9 @@ class CommandServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/config/postman.php' => config_path('postman.php'),
+        ]);
     }
 
     /**
