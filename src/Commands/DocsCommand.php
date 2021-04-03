@@ -51,6 +51,10 @@ class DocsCommand extends Command
                 $mysql = new \AndPHP\Console\Commands\Docs\MysqlToMarkdown();
                 $mysql->makeMarkdown();
                 break;
+            case 'error':
+                $mysql = new \AndPHP\Console\Commands\Docs\ErrorToMarkdown();
+                $mysql->makeMarkdown();
+                break;
             case 'html':
                 echo "同步加载 markdown 文件 》》" . PHP_EOL;
                 $markdown = app_path() . '/ApiDocs/Markdown';
