@@ -367,7 +367,7 @@ class PostmanToMarkdown
                 for ($p = 0; $p < $pathCount - 1; $p++) {
                     $output_path .= '/' . $path[$p];
                     File::isDirectory($output_path) or File::makeDirectory($output_path, 0777, true, true);
-                }
+            }
 
                 # 开启缓冲区
                 ob_start();
