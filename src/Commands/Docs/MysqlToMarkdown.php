@@ -30,6 +30,7 @@ class MysqlToMarkdown extends MarkdownConfig
         $tables = json_decode(json_encode(DB::select($selectTableSql)), true);
 
         foreach ($tables as $table) {
+            $table = array_change_key_case($table,CASE_UPPER);
             $sql = "SELECT
 COLUMN_NAME,
 DATA_TYPE,
